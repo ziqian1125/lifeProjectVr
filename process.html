@@ -8,7 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <title>VR project</title>
   </head>
 
   <style>
@@ -19,6 +22,41 @@
       p{
         font-size: 16px;
       }
+      * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
   </style>
   <body>
 
@@ -66,13 +104,14 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="pic/life.jpg" style="display:inline;width: 100%;">
+            <img src="pic/927.jpg" style="display:inline;width: 100%;">
           </div>
           <div class="col-8">
             <!-- 2 of 3 (wider) -->
             <h3 style="font-weight: bold;">Sep 27</h3>
             <p  style="font-size: 20px;">👨🏻‍💻👩🏼‍💻form the team,assign roles</p>
             <p  style="font-size: 20px;">💡we begin to try to find the Educational VR games which is related to the Political Science and vocational course</p>
+            <p  style="font-size: 20px;">🛠️Some teamates already begin to test some VR games</p>
 
             <!-- <img src="activity1.jpeg" style="display:inline"> -->
 
@@ -106,12 +145,148 @@
             <!-- <img src="activity1.jpeg" style="display:inline"> -->
 
           </div>
+          
+
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/midexercise.jpg" style="display:inline;width: 100%;">
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">Oct 15</h3>
+            <p  style="font-size: 20px;">We excercise mid-term presentation online.Siim make the presentation on behalf our team.
+              We get feedback from our supervisors to improve our presentation.
+
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/industrial simulator.jpeg" style="display:inline;width: 100%;">
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">Oct 16-18</h3>
+            <p  style="font-size: 20px;">We prepare for the Vr showcase for Mrs Ümarik’s class.Johan makes 
+              the industrial simulator work,so we can also show this for the class.
+
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/midexercise.jpg" style="display:inline;width: 100%;">
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">Oct 19</h3>
+            <p  style="font-size: 20px;">We make 1st VR showcase for Mrs Ümarik’s class.
+
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/midexercise.jpg" style="display:inline;width: 100%;">
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">Oct 21</h3>
+            <p  style="font-size: 20px;">We present in mid-term session
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/midexercise.jpg" style="display:inline;width: 100%;">
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">???</h3>
+            <p  style="font-size: 20px;">We make VR showcase for Mr Kunitsõn’s class
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;margin-bottom: 100px;">
+          <div class="col">
+            <img src="pic/midexercise.jpg" style="display:inline;width: 100%;">
+
+ 
+          </div>
+          <div class="col-8">
+            <!-- 2 of 3 (wider) -->
+            <h3 style="font-weight: bold;">Dec 15</h3>
+            <p  style="font-size: 20px;">We present the final project.
+            </p>
+            <!-- <img src="activity1.jpeg" style="display:inline"> -->
+
+          </div>
+        </div>
         </div>
       </div>
+      <!-- <footer>Tallin university</footer> -->
+
+      <!-- <section class="fade1 slider" data-sizes="10vw">
+        <div>
+          <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 50w, http://placehold.it/960x300?text=1-960w 50w" data-sizes="50vw">
+        </div>
+        <div>
+          <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 50w, http://placehold.it/960x300?text=2-960w 50w" data-sizes="50vw">
+        </div>
+        <div>
+          <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 50w, http://placehold.it/960x300?text=3-960w 50w" data-sizes="50vw">
+        </div>
+        <div>
+          <img data-lazy="http://placehold.it/350x300?text=4-350w"  data-srcset="http://placehold.it/650x300?text=4-650w 50w, http://placehold.it/960x300?text=4-960w 50w" data-sizes="50vw">
+        </div>
+        <div>
+          <img data-lazy="http://placehold.it/350x300?text=5-350w"  data-srcset="http://placehold.it/650x300?text=5-650w 50w, http://placehold.it/960x300?text=5-960w 50w" data-sizes="50vw">
+        </div>
+        <div>
+          <!-- this slide should inherit the sizes attr from the parent slider -->
+          <img data-lazy="http://placehold.it/350x300?text=6-350w"  data-srcset="http://placehold.it/650x300?text=6-650w 50w, http://placehold.it/960x300?text=6-960w 50w">
+        </div>
+      </section> -->
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+    
+      // $(".lazy").slick({
+      //   lazyLoad: 'ondemand', // ondemand progressive anticipated
+      //   infinite: true
+      // });
 
+      $('.fade1').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+</script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
