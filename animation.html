@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+
+<style> 
+#myDIV {
+  /* margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white; */
+  animation: mymove 3s infinite;
+  /* animation-iteration-count: 1; */
+
+}
+
+#bounce {
+  animation: bounce 2s infinite;
+}
+
+
+#light {
+  animation: lightning 2s infinite;
+}
+
+#color {
+  /* color:plum;
+  font-weight: bold;
+  font-size: 18px; */
+  animation: pulse 1s infinite;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
+}
+
+.lightning { animation-name: lightning }
+@keyframes lightning {
+    from, 50%, to { opacity: 1 }
+    25%, 75% { opacity: 0 }
+}
+
+@keyframes pulse {
+    100.0%  {
+        color:plum;
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+div{
+    color: white;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 18px;
+}
+
+h3{
+
+    color:#B983FF;font-weight: bold;font-family: 'Times New Roman', Times, serif;font-size: 25px;
+    margin-top: 60px;
+}
+
+</style>
+</head>
+<body style="background-color: black;">
+
+<h1 style="text-align: center;color: white;font-style: Montserrat;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Prototyping Course:Animation </h1>
+
+<div style="text-align: center;">
+
+    <h3 style="font-weight: bold;font-family: 'Times New Roman', Times, serif;font-size: 25px;">1.Draw the user's attention to an important event</h3>
+    <p >In the loading page,we can use the animation:cinema icon rotating to tell the user,
+       the page is loading.
+    </p>
+    
+    <!-- <p>Gradually rotate the DIV element 180 degrees, and back:<p> -->
+    
+    <img src="whitemovie.png" id="myDIV" style="animation-play-state: paused;">
+    <button onclick="loadpause()">stop</button>
+    <button onclick="loadplay()">play</button>
+    
+    <img src="load.png" style="width: 200px;margin-left: 30px;">
+    
+    <h3>2.Use animation to add positive emotions</h3>
+    <p>When user click the heart icon,the heart icon will have a heartBeat animation. 
+     </p>
+    
+    <img src="heart.png" class="animate__animated animate__heartBeat" id="bounce" onclick="play()" style="animation-play-state: paused;">
+    
+    <button onclick="pause()">stop</button>
+    <button onclick="play()">play</button>
+    
+    <!-- <h1 class="animate__animated animate__heartBeat" id="bounce">An animated element</h1> -->
+    <img src="front.png" style="width: 200px;margin-left: 30px;">
+    
+    <br>
+    <p>When user click the bottom tab icon:home page,this icon will have a flash animation. 
+    </p>
+    
+    <!-- <div class="cssanimation lightning" id="light"> Example </div> -->
+    <img src="cinema.png" class="cssanimation lightning" id="light" style="animation-play-state: paused;">
+    <button onclick="flashpause()">stop</button>
+    <button onclick="flashplay()">play</button>
+    <img src="front.png" style="width: 200px;margin-left: 30px;">
+    
+    
+    <h3>3. Emphasize the hierarchical relationship with animation</h3>
+    <p>Motion indicates the hierarchical relationship between Days peer items in the navigation. 
+    </p>
+
+    <p>When user has click the date,the date will have a scale animation.
+    </p>    
+    
+    <p style="display: inline-block;font-size: 14px;">Today</p>
+    <p style="display: inline-block;margin-left: 20px;animation-play-state: paused;" class="animate__animated animate__pulse" id="color" >12.11</p>
+    
+    <br>
+    
+    <button onclick="textpause()" >stop</button>
+    <button onclick="textplay()">play</button>
+    <br>
+
+    <img src="front.png" style="width: 200px;margin-left: 30px;">
+    
+
+
+</div>
+
+
+
+<script>
+
+    function play() {
+        console.log("hello")
+        document.getElementById("bounce").style.animationPlayState = "running";
+        setTimeout(function(){ document.getElementById("bounce").style.animationPlayState = "paused";},2000);
+
+    }
+    
+    function pause() {
+        console.log("hello")
+        document.getElementById("bounce").style.animationPlayState = "paused";
+    }
+    
+    function flashplay() {
+        console.log("hello")
+        document.getElementById("light").style.animationPlayState = "running";
+        setTimeout(function(){ document.getElementById("light").style.animationPlayState = "paused";},2000);
+
+    }
+    
+    function flashpause() {
+        console.log("hello")
+        document.getElementById("light").style.animationPlayState = "paused";
+    }
+    
+    function loadplay() {
+        console.log("hello")
+        document.getElementById("myDIV").style.animationPlayState = "running";
+    }
+    
+    function loadpause() {
+        console.log("hello")
+        document.getElementById("myDIV").style.animationPlayState = "paused";
+    }  
+
+    function textplay() {
+        console.log("hello")
+        document.getElementById("color").style.animationPlayState = "running";
+        setTimeout(function(){ document.getElementById("color").style.animationPlayState = "paused";},1000);
+
+    }
+    
+    function textpause() {
+        console.log("hello")
+        document.getElementById("color").style.animationPlayState = "paused";
+    }  
+    </script>
+
+</body>
+
+</html>
